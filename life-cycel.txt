@@ -9,6 +9,16 @@ onBeforeMount(async () => {
 onMounted(() => {
   // Update component state or perform other logic with the fetched data
 });
+  mounted() {
+    console.log('Component is mounted');
+    // Access DOM elements or initialize data here
+  }
+
+
+onUnmounted(() => {
+	// Perform cleanup tasks here
+})
+
 
 watch(
   () => value,
@@ -39,3 +49,25 @@ const inputComputed = computed({
   get: () => input.value,
   set: (val) => emit("update:input", val),
 });
+
+
+async someAsyncFunction() {
+  // Do something before the next DOM update
+  await nextTick();
+  // Do something after the next DOM update
+}
+    onMounted(async () => {
+      await nextTick();
+	// ….
+    });
+
+
+async someAsyncFunction() {
+  // Do something before the next DOM update
+  await this.$nextTick();
+  // Do something after the next DOM update
+}
+  async mounted() {
+    await this.$nextTick();
+	// …..
+  },
