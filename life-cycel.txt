@@ -1,0 +1,41 @@
+life cycle
+
+
+
+onBeforeMount(async () => {
+	  // Fetch data from an API before the component is mounted  
+})
+
+onMounted(() => {
+  // Update component state or perform other logic with the fetched data
+});
+
+watch(
+  () => value,
+  (newValue, oldValue) => {
+    // Custom logic to execute when 'value' changes
+  }
+);
+
+// search with query params
+watch(
+  () => useRoute().fullPath,
+  () => getData()
+);
+
+
+watchEffect(() => {
+  // Reactive code to execute
+});
+
+const myComputedProperty = computed(() => {
+  // Computed logic here
+  return // Return the computed value
+});
+
+
+v-model="inputComputed"
+const inputComputed = computed({
+  get: () => input.value,
+  set: (val) => emit("update:input", val),
+});

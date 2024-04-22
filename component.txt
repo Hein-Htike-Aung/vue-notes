@@ -1,0 +1,23 @@
+Component
+
+
+
+<template>
+      <slot name="icon" />
+      <slot name="name"></slot>
+</template>
+
+      <Component>
+        <template v-slot:icon>
+          <Home />
+        </template>
+        <template v-slot:name> 
+		Home 
+	</template>
+      </Component>
+
+
+
+      <Head>
+        <Title>Home / Twitter</Title>
+      </Head>

@@ -1,0 +1,18 @@
+Vue project
+
+npm create vite@latest my-vue-app -- --template vue
+
+yarn add prisma
+
+npx prisma init
+
+CLOUDINARY_CLOUD_NAME="dxlwpovsu"
+CLOUDINARY_API_KEY="777947441685848"
+CLOUDINARY_API_SECRET="q01nGowFKuom-fakrYbAktWsOqM
+
+
+ npx nuxi@latest init .
+
+
+npm i yup @vee-validate/yup
+

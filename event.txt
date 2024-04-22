@@ -1,0 +1,15 @@
+Event
+
+
+
+event.context.auth = { user };
+
+
+event.context.auth?.user
+
+const { id } = event.context.params;
+
+
+const { username, email } = await readBody(event);
+
+

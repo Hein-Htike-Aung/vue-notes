@@ -1,0 +1,35 @@
+Hooks
+
+
+
+const route = useRoute();
+route.fullPath
+route.params.id
+route.push({
+    path: "/search",
+    query: {
+      q: search.value,
+    },
+  });
+
+const searchQuery = useRoute().query.q;
+
+navigateTo(`/status/${tweet.id}`);
+
+
+//used for server-side
+const res = await useFetch("/api", {
+    method: "POST",
+    body: {    },
+  });
+
+//used for client-side data fetching
+let res = await $fetch("/api", { 
+    method: "POST",
+    body: {},
+  });
+
+
+const debouncedFunction = useDebounce(async () => {
+  // Your asynchronous function logic here
+}, 100);

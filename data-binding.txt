@@ -1,0 +1,11 @@
+Data binding
+
+
+let value = ref(false);
+value.value = true;
+
+const data = reactive({
+  username: "",
+  password: "",
+  loading: false,
+});

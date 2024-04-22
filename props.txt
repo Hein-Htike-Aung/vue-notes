@@ -1,0 +1,31 @@
+Props
+
+
+
+const props = defineProps(["product", "selectedArray"]);
+const { product, selectedArray } = toRefs(props);
+
+const emit = defineEmits(["selectedRadio"]);
+emit("selectedRadio", { id: 1 });
+
+<CartItem
+	:product="product"
+	:selectedArray="selectedArray"
+       @selectedRadio="selectedRadioFunc"/>
+
+const selectedRadioFunc = (e) => {}
+
+
+
+
+
+
+definePageMeta({ middleware: "auth" });
+
+const props = defineProps({
+  title: {
+	type: String,
+	required: true,
+	default: '',
+  },
+});

@@ -1,0 +1,10 @@
+Cookie
+
+
+const data = getCookie(event, "cookie-name");
+
+  setCookie(event, "cookie-name", data, {
+    httpOnly: true,
+    sameSite: true,
+  });
+
